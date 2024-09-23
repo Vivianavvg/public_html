@@ -1,20 +1,59 @@
-/* Global styles */
+
+/* General page styles */
 body {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
     background: url('background-image.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
-/* Heading styles */
 header {
     text-align: center;
+    margin-top: 20px;
 }
 
-img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Headshot styling */
+img.headshot {
     width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Navigation styles for the links below the headshot */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    color: red;
+}
+
+/* Layout structure for main content */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Left and right sections */
+.left, .right {
+    width: 45%;
 }
 
 /* Table zebra striping */
@@ -26,19 +65,30 @@ table tr:nth-child(even) {
     background-color: #d0d0d0;
 }
 
-/* Links hover effect */
-a:hover {
-    color: red;
-}
-
-/* Styling for special words */
-span.special {
-    color: red;
-    font-weight: bold;
-}
-
 /* Quote styling */
 div.quote {
     font-style: italic;
     margin: 20px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Hover effect for links */
+footer a:hover {
+    color: red;
+}
+
+/* Ensures the entire page uses sans-serif font */
+* {
+    font-family: sans-serif;
+}
+
+/* For any special words */
+span.special {
+    color: red;
+    font-weight: bold;
 }
